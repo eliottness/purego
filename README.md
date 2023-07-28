@@ -1,5 +1,5 @@
 # purego
-[![Go Reference](https://pkg.go.dev/badge/github.com/ebitengine/purego?GOOS=darwin.svg)](https://pkg.go.dev/github.com/ebitengine/purego?GOOS=darwin)
+[![Go Reference](https://pkg.go.dev/badge/github.com/eliottness/purego?GOOS=darwin.svg)](https://pkg.go.dev/github.com/eliottness/purego?GOOS=darwin)
 
 A library for calling C functions from Go without Cgo.
 
@@ -19,7 +19,7 @@ born to bring that same vision to the other platforms supported by Ebitengine.
 
 ## Example
 
-This example only works on macOS and Linux. For a complete example look at [libc](https://github.com/ebitengine/purego/tree/main/examples/libc) which supports Windows.
+This example only works on macOS and Linux. For a complete example look at [libc](https://github.com/eliottness/purego/tree/main/examples/libc) which supports Windows.
 
 ```go
 package main
@@ -28,7 +28,7 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/ebitengine/purego"
+	"github.com/eliottness/purego"
 )
 
 func getSystemLibrary() string {

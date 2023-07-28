@@ -11,7 +11,7 @@ import (
 	"math"
 	"reflect"
 
-	"github.com/ebitengine/purego"
+	"github.com/eliottness/purego"
 )
 
 //TODO: support try/catch?

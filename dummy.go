@@ -10,5 +10,5 @@
 package purego
 
 import (
-	_ "github.com/ebitengine/purego/internal/abi"
+	_ "github.com/eliottness/purego/internal/fakecgo/abi"
 )

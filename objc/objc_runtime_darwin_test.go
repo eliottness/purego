@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/ebitengine/purego"
-	"github.com/ebitengine/purego/objc"
+	"github.com/eliottness/purego"
+	"github.com/eliottness/purego/objc"
 )
 
 func ExampleAllocateClassPair() {

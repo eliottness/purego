@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"unsafe"
 
-	"github.com/ebitengine/purego/objc"
+	"github.com/eliottness/purego/objc"
 )
 
 var (
