@@ -41,6 +41,7 @@ jobs:
 
       - name: go build
         run: |
+          set -x
           go build -v ./...
           # Compile without optimization to check potential stack overflow.
           # The option '-gcflags=all=-N -l' is often used at Visual Studio Code.
