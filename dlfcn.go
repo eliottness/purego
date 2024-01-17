@@ -77,18 +77,18 @@ func loadSymbol(handle uintptr, name string) (uintptr, error) {
 // sadly, I do not know of anyway to remove the assembly stubs entirely because //go:linkname doesn't
 // appear to work if you link directly to the C function on darwin arm64.
 
-//go:linkname dlopen dlopen
-var dlopen uintptr
-var dlopenABI0 = uintptr(unsafe.Pointer(&dlopen))
+//go:linkname dlopen_asm dlopen_asm
+var dlopen_asm uintptr
+var dlopenABI0 = uintptr(unsafe.Pointer(&dlopen_asm))
 
-//go:linkname dlsym dlsym
-var dlsym uintptr
-var dlsymABI0 = uintptr(unsafe.Pointer(&dlsym))
+//go:linkname dlsym_asm dlsym_asm
+var dlsym_asm uintptr
+var dlsymABI0 = uintptr(unsafe.Pointer(&dlsym_asm))
 
-//go:linkname dlclose dlclose
-var dlclose uintptr
-var dlcloseABI0 = uintptr(unsafe.Pointer(&dlclose))
+//go:linkname dlclose_asm dlclose_asm
+var dlclose_asm uintptr
+var dlcloseABI0 = uintptr(unsafe.Pointer(&dlclose_asm))
 
-//go:linkname dlerror dlerror
-var dlerror uintptr
-var dlerrorABI0 = uintptr(unsafe.Pointer(&dlerror))
+//go:linkname dlerror_asm dlerror_asm
+var dlerror_asm uintptr
+var dlerrorABI0 = uintptr(unsafe.Pointer(&dlerror_asm))
