@@ -6,21 +6,21 @@
 #include "textflag.h"
 
 // func dlopen(path *byte, mode int) (ret uintptr)
-TEXT dlopen(SB), NOSPLIT|NOFRAME, $0-0
-	JMP purego_dlopen(SB)
+TEXT dlopen_asm(SB), NOSPLIT|NOFRAME, $0-0
+	JMP dlopen(SB)
 	RET
 
 // func dlsym(handle uintptr, symbol *byte) (ret uintptr)
-TEXT dlsym(SB), NOSPLIT|NOFRAME, $0-0
-	JMP purego_dlsym(SB)
+TEXT dlsym_asm(SB), NOSPLIT|NOFRAME, $0-0
+	JMP dlsym(SB)
 	RET
 
 // func dlerror() (ret *byte)
-TEXT dlerror(SB), NOSPLIT|NOFRAME, $0-0
-	JMP purego_dlerror(SB)
+TEXT dlerror_asm(SB), NOSPLIT|NOFRAME, $0-0
+	JMP dlerror(SB)
 	RET
 
 // func dlclose(handle uintptr) (ret int)
-TEXT dlclose(SB), NOSPLIT|NOFRAME, $0-0
-	JMP purego_dlclose(SB)
+TEXT dlclose_asm(SB), NOSPLIT|NOFRAME, $0-0
+	JMP dlclose(SB)
 	RET
